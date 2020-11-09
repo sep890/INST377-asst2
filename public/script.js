@@ -25,7 +25,7 @@ function displayMatches() {
     const restCity = place.city.replace(regex, `<span class="hl">${this.value}</span>`)
     const restState = place.state.replace(regex, `<span class="hl">${this.value}</span>`)
     return `
-    
+   
       <li>
         <br><br>
         <span class="name">${restName}</span><br>
@@ -37,7 +37,7 @@ function displayMatches() {
         <br><br>
       </li>
       <br><br>
-  
+
     `;
   }).join('');
   suggestions.innerHTML = html;
