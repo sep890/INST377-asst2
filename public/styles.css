@@ -3,6 +3,7 @@ body {
   }
   
   .wrapper {
+    width: 1600px;
     display: flex;
     flex-direction: column;
   }
@@ -11,19 +12,12 @@ body {
     min-height: 100%;
   }
 
-  @media screen and (max-width: 1600px){
-    .wrapper{
-      width: 1570px;
-    }
-  }
-
-  @media screen and (max-width: 700px){
+  @media only screen and (max-width: 700px){
+      /* For mobile */
     .wrapper{
       width:670px;
     }
   }
-
-
   
   .address {
     font-style: italic;
@@ -109,7 +103,6 @@ body {
     margin:0 auto;
   }
   
-  /* New for Lab 7 */
   h1 {
     margin: 20px 50px;
     padding: 0 20px;
@@ -118,13 +111,10 @@ body {
     color: white;
     display: flex;
     font-family: 'Comfortaa', cursive;
-
-    
     align-items: center;
     justify-content: center;
     font-weight: bold;
     font-size: 1.5em;
-    text-transform: capitalize;
     flex-wrap: nowrap;
     border-radius: 4px;
   }
