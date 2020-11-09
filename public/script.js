@@ -1,5 +1,3 @@
-
-
 const endpoint = 'https://data.princegeorgescountymd.gov/resource/umjn-t2iz.json';
 
 const restaurants = [];
@@ -27,12 +25,19 @@ function displayMatches() {
     const restCity = place.city.replace(regex, `<span class="hl">${this.value}</span>`)
     const restState = place.state.replace(regex, `<span class="hl">${this.value}</span>`)
     return `
+   
       <li>
+        <br><br>
         <span class="name">${restName}</span><br>
         <span class="category">${restCat}</span><br>
-        <span class="address1">${restAdd}</span><br>
-        <span class="address2">${restCity}, ${restState} ${restZip}</span>
+        <address class = "address">
+          <span class="address1">${restAdd}</span><br><br>
+          <span class="address2">${restCity}, ${restState} ${restZip}</span>
+        </address>
+        <br><br>
       </li>
+      <br><br>
+
     `;
   }).join('');
   suggestions.innerHTML = html;
