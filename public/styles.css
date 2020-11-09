@@ -17,9 +17,9 @@ body {
     }
   }
 
-  @media screen and (min-width: 750px){
+  @media screen and (min-width: 650px){
     .container{
-      width:720px;
+      width:620px;
     }
   }
   
