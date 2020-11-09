@@ -11,17 +11,19 @@ body {
     min-height: 100%;
   }
 
-  @media screen and (min-width: 1600px){
-    .container.flex-outer{
-      width:1570px;
+  @media screen and (max-width: 1600px){
+    .wrapper{
+      width: 1570px;
     }
   }
 
   @media screen and (max-width: 700px){
-    .container.flex-outer{
-      width:680px;
+    .wrapper{
+      width:670px;
     }
   }
+
+
   
   .address {
     font-style: italic;
@@ -103,7 +105,6 @@ body {
   }
   
   .flex-outer {
-    width: 960px;
     padding: 0 16px;
     margin:0 auto;
   }
